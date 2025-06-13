@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Kejadian Terkini</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .upload-section {
+      padding: 50px 0;
+    }
+    .upload-form {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigasi -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Karang Taruna</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Beranda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="upload.html">Upload Kejadian</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Upload Section -->
+  <section class="upload-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="upload-form">
+            <h2 class="text-center mb-4">Upload Kejadian Terkini</h2>
+            <form id="uploadForm" enctype="multipart/form-data">
+              <div class="form-group">
+                <label for="eventTitle">Judul Kejadian</label>
+                <input type="text" class="form-control" id="eventTitle" name="eventTitle" required>
+              </div>
+              <div class="form-group">
+                <label for="eventDescription">Deskripsi Kejadian</label>
+                <textarea class="form-control" id="eventDescription" name="eventDescription" rows="4" required></textarea>
+              </div>
+              <div class="form-group">
+                <label for="eventImage">Upload Gambar</label>
+                <input type="file" class="form-control-file" id="eventImage" name="eventImage" accept="image/*" required>
+              </div>
+              <div class="form-group">
+                <label for="eventDate">Tanggal Kejadian</label>
+                <input type="date" class="form-control" id="eventDate" name="eventDate" required>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Upload</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS dan dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Script untuk menangani form upload -->
+  <script>
+    document.getElementById('uploadForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      // Anda bisa menambahkan kode untuk mengirim data ke server di sini
+      alert('Kejadian berhasil diupload!');
+      // Reset form setelah upload
+      this.reset();
+    });
+  </script>
+</body>
+</html>

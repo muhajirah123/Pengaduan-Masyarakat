@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        input, textarea { width: 100%; padding: 8px; box-sizing: border-box; }
+        button { background: #4CAF50; color: white; padding: 10px 15px; border: none; cursor: pointer; }
+        button:hover { background: #45a049; }
+        .error { color: red; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <h1>Hubungi Kami</h1>
+    
+    <form id="contactForm" action="https://formsubmit.co/muhajirah1204@gmail.com" method="POST">
+        <!-- Data FormSubmit -->
+        <input type="hidden" name="_next" value="https://websiteanda.com/terimakasih.html">
+        <input type="hidden" name="_subject" value="Pesan Baru!">
+        
+        <!-- Field Input -->
+        <div class="form-group">
+            <label for="name">Nama Lengkap*</label>
+            <input type="text" id="name" name="name" required>
+            <div class="error" id="nameError"></div>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required>
+            <div class="error" id="emailError"></div>
+        </div>
+        
+        <div class="form-group">
+            <label for="message">Pesan*</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <div class="error" id="messageError"></div>
+        </div>
+        
+        <button type="submit">Kirim Pesan</button>
+    </form>
+
+    <!-- Script Validasi -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            let isValid = true;
+            
+            // Validasi Nama
+            const name = document.getElementById('name').value;
+            if(name.length < 3) {
+                document.getElementById('nameError').textContent = 'Nama minimal 3 karakter';
+                isValid = false;
+            } else {
+                document.getElementById('nameError').textContent = '';
+            }
+            
+            // Validasi Email
+            const email = document.getElementById('email').value;
+            if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                document.getElementById('emailError').textContent = 'Email tidak valid';
+                isValid = false;
+            } else {
+                document.getElementById('emailError').textContent = '';
+            }
+            
+            // Validasi Pesan
+            const message = document.getElementById('message').value;
+            if(message.length < 10) {
+                document.getElementById('messageError').textContent = 'Pesan terlalu pendek';
+                isValid = false;
+            } else {
+                document.getElementById('messageError').textContent = '';
+            }
+            
+            if(!isValid) e.preventDefault();
+        });
+    </script>
+</body>
+</html>

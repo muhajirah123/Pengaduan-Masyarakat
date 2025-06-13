@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Web Profil Karang Taruna Desa Paraikatte, Kec. Baejng, Kab. Gowa, Indonesia">
+  <meta name="author" content="M. Raka Maulana A.">
+
+  <title>Karang Taruna Desa Paraikatte</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/favicon.ico"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;700&family=Kaushan+Script&family=Droid+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@400;100;300;700&display=swap" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link href="css/agency.min.css" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color: #18bc9c;
+      --accent-color: #e74c3c;
+      --light-color: #ecf0f1;
+      --dark-color: #2c3e50;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      overflow-x: hidden;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+    }
+    
+    .navbar {
+      background-color: var(--primary-color);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+    
+    .navbar-brand {
+      font-family: 'Kaushan Script', cursive;
+      font-size: 1.5rem;
+    }
+    
+    .masthead {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/hero-bg.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 200px 0;
+    }
+    
+    .intro-lead-in {
+      font-family: 'Droid Serif', serif;
+      font-style: italic;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .intro-heading {
+      font-size: 3.5rem;
+      margin-bottom: 2rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    
+    .btn-primary {
+      background-color: var(--secondary-color);
+      border-color: var(--secondary-color);
+      padding: 12px 30px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+    }
+    
+    .btn-primary:hover {
+      background-color: #15a589;
+      border-color: #15a589;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    section {
+      padding: 100px 0;
+    }
+    
+    .section-heading {
+      position: relative;
+      margin-bottom: 50px;
+      padding-bottom: 15px;
+    }
+    
+    .section-heading:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background: var(--secondary-color);
+    }
+    
+    .timeline {
+      position: relative;
+      padding: 0;
+      list-style: none;
+    }
+    
+    .timeline:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 2px;
+      margin-left: -1px;
+      background-color: #e9ecef;
+    }
+    
+    .timeline > li {
+      position: relative;
+      margin-bottom: 50px;
+    }
+    
+    .timeline-image {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+      background-color: var(--secondary-color);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .portfolio-item {
+      margin-bottom: 30px;
+      transition: all 0.3s ease;
+    }
+    
+    .portfolio-item:hover {
+      transform: translateY(-10px);
+    }
+    
+    .portfolio-caption {
+      padding: 20px;
+      background: white;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+    
+    footer {
+      background-color: var(--dark-color);
+      color: white;
+      padding: 30px 0;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .masthead {
+        padding: 100px 0;
+      }
+      
+      .intro-heading {
+        font-size: 2.5rem;
+      }
+      
+      .timeline:before {
+        left: 40px;
+      }
+      
+      .timeline > li {
+        margin-bottom: 30px;
+      }
+      
+      .timeline-image {
+        width: 80px;
+        height: 80px;
+        left: 15px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      
+      section {
+        padding: 60px 0;
+      }
+    }
+    
+    /* Custom card styling */
+    .card {
+      border: none;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+    
+    /* Gallery styling */
+    .gallery-item {
+      margin-bottom: 30px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .gallery-item img {
+      transition: transform 0.5s ease;
+    }
+    
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+    
+    /* Form styling */
+    .form-control {
+      border-radius: 50px;
+      padding: 15px 20px;
+      border: 1px solid #eee;
+    }
+    
+    textarea.form-control {
+      border-radius: 20px;
+    }
+    
+    /* Back to top button */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      background: var(--secondary-color);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      z-index: 99;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+    
+    .back-to-top.active {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .back-to-top:hover {
+      background: var(--primary-color);
+      color: white;
+    }
+  </style>
+</head>
+
+<body id="page-top">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Karang Taruna</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">Sejarah</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Profil</a>
+          </li>            
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Kegiatan</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#album">Album</a>
+          </li>                     
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Kejadian Terkini</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">Selamat Datang di Web Profil</div>
+        <div class="intro-heading text-uppercase">Karang Taruna Paraikatte</div>
+        <div class="mt-4">
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger mr-3" href="#portfolio">Selengkapnya</a>
+          <a class="btn btn-outline-light btn-xl text-uppercase js-scroll-trigger" href="#contact">Hubungi Kami</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sejarah Section -->
+  <section id="about" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Sejarah</h2>
+          <h3 class="section-subheading text-muted">Perjalanan Karang Taruna Desa Paraikatte</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+            <!-- Timeline Item 1 -->
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/timeline/1980.jpg" alt="1980">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>1980</h4>
+                  <h4 class="subheading">Awal Berdiri</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Karang Taruna Desa Paraikatte didirikan oleh pemuda setempat dengan tujuan memberdayakan pemuda melalui kegiatan sosial dan pembangunan masyarakat.</p>
+                </div>
+              </div>
+            </li>
+            
+            <!-- Timeline Item 2 -->
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/timeline/1995.jpg" alt="1995">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>1995</h4>
+                  <h4 class="subheading">Era Pengembangan</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Mulai mengembangkan berbagai program pelatihan keterampilan dan kewirausahaan untuk pemuda.</p>
+                </div>
+              </div>
+            </li>
+            
+            <!-- Timeline Item 3 -->
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/timeline/2010.jpg" alt="2010">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>2010</h4>
+                  <h4 class="subheading">Era Modern</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Mulai mengadopsi teknologi digital dalam kegiatan administrasi dan program pemberdayaan.</p>
+                </div>
+              </div>
+            </li>
+            
+            <!-- Timeline Item 4 -->
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <div class="timeline-image-content">
+                  <h4>Menjadi Bagian dari Sejarah!</h4>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Profil Section -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Profil</h2>
+          <h3 class="section-subheading text-muted">Karang Taruna Desa Paraikatte Kec. Bajeng Kab. Gowa Prov. Sulsel</h3>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Wilayah -->
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/profil/wilayah.png" alt="Wilayah">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Wilayah</h4>
+            <p class="text-muted">Desa Paraikatte</p>
+          </div>
+        </div>
+        
+        <!-- Struktur Organisasi -->
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/profil/ST.png" alt="Struktur Organisasi">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Struktur Organisasi</h4>
+            <p class="text-muted">Karang Taruna</p>
+          </div>
+        </div>
+        
+        <!-- Visi Misi -->
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/profil/visi-misi.png" alt="Visi dan Misi">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Visi dan Misi</h4>
+            <p class="text-muted">Karang Taruna</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kegiatan Section -->
+  <section id="services" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Kegiatan Karang Taruna</h2>
+          <p class="section-subheading text-muted">Berbagai kegiatan yang telah kami lakukan untuk masyarakat</p>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Festival Anak Sholeh -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img class="card-img-top" src="img/lembaga-desa/festivalanaksholeh.png" alt="Festival Anak Sholeh">
+            <div class="card-body">
+              <h4 class="card-title">Festival Anak Sholeh</h4>
+              <p class="card-text text-justify">Festival anak sholeh adalah ajang pencarian bakat untuk mengukir prestasi bagi santriwan-santriwati di desa Paraikatte. Acara yang diselenggarakan setiap tahun sekali ini menjadi puncak kegiatan Karang Taruna - Remaja Mesjid - Badan Komunikasi Pemuda Remaja Masjid Indonesia (DPK-BKPRMI).</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- PORDES -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img class="card-img-top" src="img/lembaga-desa/pordes.png" alt="PORDES">
+            <div class="card-body">
+              <h4 class="card-title">PORDES</h4>
+              <p class="card-text text-justify">Pekan Olahraga Desa (PORDES) adalah kegiatan di lingkup Desa yang dilaksanakan setiap tahun sekali khusus dalam bidang olahraga, dalam rangka memperingati Hari Ulang Tahun (HUT) Kemerdekaan Republik Indonesia.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Malam Ramah Tamah -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img class="card-img-top" src="img/lembaga-desa/ramahtamah.png" alt="Malam Ramah Tamah">
+            <div class="card-body">
+              <h4 class="card-title">Malam Ramah Tamah</h4>
+              <p class="card-text text-justify">Malam Ramah Tamah 17-an Tingkat Desa adalah sebuah acara yang biasanya diselenggarakan dalam rangka memperingati Hari Kemerdekaan Republik Indonesia (17 Agustus) di tingkat desa.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Bakti Sosial -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img class="card-img-top" src="img/lembaga-desa/baksos.png" alt="Bakti Sosial">
+            <div class="card-body">
+              <h4 class="card-title">Bakti Sosial</h4>
+              <p class="card-text text-justify">Bakti sosial merupakan konsep atau tindakan yang dilakukan oleh individu atau kelompok untuk membantu orang lain dalam kebutuhan sosial atau kemanusiaan.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Pawai Obor -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img class="card-img-top" src="img/lembaga-desa/pawai obor.png" alt="Pawai Obor">
+            <div class="card-body">
+              <h4 class="card-title">Pawai Obor</h4>
+              <p class="card-text text-justify">Pawai obor sendiri merupakan tradisi yang hampir ada di setiap daerah di Indonesia untuk menyambut hari-hari besar islam. Tradisi ini bukanlah merupakan tradisi yang baru.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Album Section -->
+  <section id="album">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Album Kegiatan</h2>
+          <p class="section-subheading text-muted">Momen-momen berharga dari kegiatan kami</p>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Gallery items -->
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="gallery-item">
+            <img src="img/album/Dokumentasikt.png" class="img-fluid" alt="Dokumentasi">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="gallery-item">
+            <img src="img/album/harisantri.png" class="img-fluid" alt="Hari Santri">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="gallery-item">
+            <img src="img/album/baktipemuda.png" class="img-fluid" alt="Bakti Pemuda">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="gallery-item">
+            <img src="img/album/pembukaan17san.png" class="img-fluid" alt="Pembukaan 17an">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="gallery-item">
+            <img src="img/album/pelatihan.png" class="img-fluid" alt="Pelatihan">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="gallery-item">
+            <img src="img/album/lounchingbrend.png" class="img-fluid" alt="Launching Brand">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="gallery-item">
+            <img src="img/album/futsal.png" class="img-fluid" alt="Futsal">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="gallery-item">
+            <img src="img/album/vaksin.png" class="img-fluid" alt="Vaksin">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak Section -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Kejadian Terkini</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .upload-section {
+      padding: 50px 0;
+    }
+
+    .upload-form {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+
+  <!-- Upload Section -->
+<!-- Replace your current Kejadian Terkini section with this -->
+<section id="kejadian" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Kejadian Terkini</h2>
+    
+    <!-- Upload Form -->
+    <section id="contact" class="py-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <h2 class="section-heading text-uppercase mb-5">Kejadian Terkini</h2>
+              </div>
+          </div>
+        <form id="uploadForm" action="process_upload.php" method="POST" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="judul">Judul Kejadian</label>
+            <input type="text" class="form-control" id="judul" name="judul" required>
+          </div>
+          <div class="form-group">
+            <label for="deskripsi">Deskripsi Kejadian</label>
+            <textarea class="form-control" id="deskripsi" name="deskripsi" rows="4" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="tanggal">Tanggal Kejadian</label>
+            <input type="date" class="form-control" id="tanggal" name="tanggal" required>
+          </div>
+          <div class="form-group">
+            <label for="gambar">Upload Gambar</label>
+            <input type="file" class="form-control-file" id="gambar" name="gambar" accept="image/*" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Upload</button>
+        </form>
+      </div>
+    </div>
+      <div class="row mt-5">
+        <div class="col-md-4 text-center">
+          <i class="fa fa-map-marker fa-3x mb-3"></i>
+          <p>Desa Paraikatte, Kec. Bajeng<br>Kab. Gowa, Sulawesi Selatan</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <i class="fa fa-phone fa-3x mb-3"></i>
+          <p>+62 823-9337-1298</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <i class="fa fa-envelope fa-3x mb-3"></i>
+          <p>karangtarunaparaikatte@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <span class="copyright">Copyright &copy; Karang Taruna Paraikatte 2023</span>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="https://facebook.com/Kt.Paraikatte" target="_blank">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://instagram.com/kt_desa.paraikatte" target="_blank">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://youtube.com/@karangtarunadesaparaikatte1535" target="_blank">
+                <i class="fa fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline quicklinks">
+            <li class="list-inline-item">
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">Terms of Use</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top"><i class="fa fa-arrow-up"></i></a>
+  <!-- Modal 1 - Wilayah -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2 class="text-uppercase">Wilayah</h2>
+                <p class="item-intro text-muted">Desa Paraikatte</p>
+                <img class="img-fluid d-block mx-auto" src="img/profil/wilayah.png" alt="Wilayah">
+                <p>Karang Taruna Desa Paraikatte merupakan salah satu desa yang ada di Kecamatan Bajeng Kabupaten Gowa dengan luas wilayah 60,09 Km<sup>2</sup>. Sebelah utara berbatasan dengan Desa Kalebajeng, sebelah selatan berbatasan dengan Desa Limbung, sebelah barat berbatasan dengan Desa Bajeng, dan sebelah timur berbatasan dengan Desa Panciro.</p>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fa fa-times"></i>
+                  Tutup
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 2 - Struktur Organisasi -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 mx-auto">
+              <div class="modal-body">
+                <h2 class="text-uppercase">Struktur Organisasi</h2>
+                <p class="item-intro text-muted">Karang Taruna Desa Paraikatte</p>
+                
+                <div class="org-chart">
+                  <!-- Level 1 - Ketua -->
+                  <<div class="org-level">
+                    <div class="org-item">
+                      <h3>Ketua</h3>
+                      <p>NURUL IKHWAN</p>
+                    </div>
+                  </div>
+                  <div class="org-line"></div>
+                
+                  <div class="org-level">
+                    <div class="org-item">
+                      <h3>Wakil Ketua</h3>
+                      <p>SYAHRUL DAHLAN</p>
+                    </div>
+                  </div>
+                  <div class="org-line"></div>
+                
+                  <div class="org-sub-level">
+                    <div class="org-item">
+                      <h3>Sekretaris</h3>
+                      <p>KHAERUNNISA</p>
+                      <h4>Wakil Sekretaris</h4>
+                      <p>PUTRI ROS ARIFAH</p>
+                    </div>
+                    <div class="org-item">
+                      <h3>Bendahara</h3>
+                      <p>NUR INDASARI</p>
+                      <h4>Wakil Bendahara</h4>
+                      <p>NURUL ILMI</p>
+                    </div>
+                  </div>
+                  <div class="org-line"></div>
+                
+                  <div class="org-sub-level" style="display: flex; flex-wrap: wrap; justify-content: center;">
+                    <div class="org-item" style="width: 150px;">
+                      <h3>Bidang Organisasi Kaderisasi dan Keanggotaan</h3>
+                      <h4>Ketua</h4>
+                      <p>TAUFIK HIDAYAT</p>
+                      <h4>Anggota</h4>
+                      <p>Nurul Multazam, M Akhyar Aksan, Dimas Ramadhan, Nurul Wahidah, Zulfiana Rauf, Nuraprilianti</p>
+                    </div>
+                    <div class="org-item" style="width: 150px;">
+                      <h3>Bidang Pelayanan Sosial dan Penanggulangan Bencana</h3>
+                      <h4>Ketua</h4>
+                      <p>MUH RIZAL</p>
+                      <h4>Anggota</h4>
+                      <p>Muhandis Mulfi, Kurniayawan, Muh Yasir, Ikhsan Dahlan, Syahidah Nur, Syahrul Ramadhan</p>
+                    </div>
+                    <div class="org-item" style="width: 150px;">
+                      <h3>Bidang Advokasi Hukum dan HAM</h3>
+                      <h4>Ketua</h4>
+                      <p>MUH AKBAR</p>
+                      <h4>Anggota</h4>
+                      <p>Alif Sandi Putra, Restu Dwi Husna, Aditya Dwi Setiawan, Nurfadila Wilmayanti, Nurfadila</p>
+                    </div>
+                    <div class="org-item" style="width: 150px;">
+                      <h3>Bidang Pemberdayaan Perempuan</h3>
+                      <h4>Ketua</h4>
+                      <p>MUHAJIRAH</p>
+                      <h4>Anggota</h4>
+                      <p>Siti Rahmadani Syam, Syamsumarni, Dwi Ayu Zahrah, Irma Safitri, Ismayanti, Tasya Puti Azika, Nur Aliyah Isnaeni</p>
+                    </div>
+                    <div class="org-item" style="width: 150px;">
+                      <h3>Bidang Lingkungan Hidup dan Kepariwisataan</h3>
+                      <h4>Ketua</h4>
+                      <p>WARDIA PURNAMA PUTRI</p>
+                      <h4>Anggota</h4>
+                      <p>Zakiah, Nur Biya, Nurul Fitritunnisa, Muzakira, Fadil Algazali</p>
+                    </div>
+                    <div class="org-item" style="width: 150px;">
+                      <h3>Bidang Kerohanian</h3>
+                      <h4>Ketua</h4>
+                      <p>DIAN ULIL AFNI</p>
+                      <h4>Anggota</h4>
+                      <p>Siti Magfira Syam, Risma Agustina Bahar, Nabila Nur Alifa, Nurfadila, Mukarramah, Reani Dwi Cahyani, Siti Nurhalisa Rahman</p>
+                    </div>
+                    <div class="org-item" style="width: 150px;">
+                      <h3>Bidang Informasi dan Komunikasi</h3>
+                      <h4>Ketua</h4>
+                      <p>ALI IMRAN</p>
+                      <h4>Anggota</h4>
+                      <p>Nurul Inaya, Fikri, Reski Aulia Sarah, Muh Arfah, Arifullah, Auliya Reskiana Agus</p>
+                    </div>
+                    <div class="org-item" style="width: 150px;">
+                      <h3>Bidang Olahraga dan Seni Budaya</h3>
+                      <h4>Ketua</h4>
+                      <p>MUH ARHAM</p>
+                      <h4>Anggota</h4>
+                      <p>Renaldi, 
+                        Zulkarnain, 
+                        Muh Aqsa, 
+                        Nurfauzan Wilfiqri, 
+                        Herianto, Mustaina</p>
+                    </div>
+                    <div class="org-item" style="width: 150px;">
+                      <h3>Bidang Ekonomi Koperasi dan UKM</h3>
+                      <h4>Ketua</h4>
+                      <p>SYAIFULLAH</p>
+                      <h4>Anggota</h4>
+                      <p>Muzalri, 
+                        Nurhidayatullah, 
+                        Rikaldi, 
+                        Muh Yusran, 
+                        Yusran, N
+                        urfaisyah Azika</p>
+                    </div>
+                    <div class="org-item" style="width: 150px;">
+                      <h3>Bidang Pendidikan Pelayanan dan Pengembangan</h3>
+                      <h4>Ketua</h4>
+                      <p>MUH HAIDIR</p>
+                      <h4>Anggota</h4>
+                      <p>Ahmad Fiqri,, 
+                        Fatihatil Hamdi, 
+                        Narianti, 
+                        Asmaulhusna, 
+                        ReskiAulia Eka, 
+                        Nabila Atsarwa</p>
+                    </div>
+                  </div>
+                </div>
+
+              <button class="btn btn-primary d-block mx-auto mt-4" data-dismiss="modal" type="button">
+                <i class="fa fa-times"></i>
+                Tutup
+              </button>
+            </div>
+          </section>
+        </body>
+        </html>
+
+  <!-- Modal 3 - Visi Misi -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <h2 class="text-uppercase">Visi dan Misi</h2>
+              <p class="item-intro text-muted">Karang Taruna Desa Paraikatte</p>
+              <div class="text-left">
+                <h4><b>VISI :</b></h4>
+                <p>
+                  Menciptakan Tunas yang orientatif, aspiratif, progresif yang berasaskan ketakwaan kepada Tuhan Yang Maha Esa dan menjadikan budaya lokal sebagai cerminan yang utama.
+                </p>
+                <h4><b>MISI :</b></h4>
+                <ul>
+                  <li>Menerapkan Budaya organisasi yang profesional dan penuh dengan rasa kekeluargaan guna merawat citra organisasi yang solid.</li>
+                  <li>Menjadikan Karang Taruna sebagai wadah menyalurkan aspirasi dan mengembangkan nilai moral, kreativitas, dan kemampuan para pemuda. Sekaligus menjadi mesin pencetakan generasi kritis, militan, dan inovatif.</li>
+                  <li>Mengakomodir dan mengembangkan potensi, kompetensi serta minat dan bakat pemuda Desa Paraikatte.</li>
+                </ul>
+              </div>
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fa fa-times"></i>
+                Tutup
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
